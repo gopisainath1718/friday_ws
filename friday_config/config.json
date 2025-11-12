@@ -1,0 +1,211 @@
+{
+    "robot_name": "friday",
+    "default_urdf": "False",
+    "urdf_path": "$(find friday_robot)/urdf/friday_robot.urdf",
+    "links": {
+        "base": "base_link",
+        "left_front": [
+            "fl_abad_link",
+            "fl_upper_leg_link",
+            "fl_lower_leg_link",
+            "fl_foot_link"
+        ],
+        "right_front": [
+            "fr_abad_link",
+            "fr_upper_leg_linnk",
+            "fr_lower_leg_link",
+            "fr_foot_link"
+        ],
+        "left_hind": [
+            "hl_abad_link",
+            "hl_upper_leg_linnk",
+            "hl_lower_leg_link",
+            "hl_foot_link"
+        ],
+        "right_hind": [
+            "hr_abad_link",
+            "hr_upper_leg_link",
+            "hr_lower_leg_link",
+            "hr_foot_link"
+        ]
+    },
+    "joints": {
+        "left_front": [
+            "fl_abad_joint",
+            "fl_hip_joint",
+            "fl_knee_joint",
+            "fl_ankle_joint"
+        ],
+        "right_front": [
+            "fr_abad_joint",
+            "fr_hip_joint",
+            "fr_knee_joint",
+            "fr_ankle_joint"
+        ],
+        "left_hind": [
+            "hl_abad_joint",
+            "hl_hip_joint",
+            "hl_knee_joint",
+            "hl_ankle_joint"
+        ],
+        "right_hind": [
+            "hr_abad_joint",
+            "hr_hip_joint",
+            "hr_knee_joint",
+            "hr_ankle_joint"
+        ]
+    },
+    "firmware": {
+        "transforms": {
+            "left_front": {
+                "hip": [
+                    0.093784,
+                    0.039,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "upper_leg": [
+                    0.0,
+                    0.06015,
+                    -0.01025,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "lower_leg": [
+                    0.03,
+                    0.0,
+                    -0.107,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "foot": [
+                    -0.00045854,
+                    0.0016595,
+                    -0.13599,
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            "right_front": {
+                "hip": [
+                    0.093784,
+                    -0.039,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "upper_leg": [
+                    0.0,
+                    -0.06015,
+                    -0.01005,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "lower_leg": [
+                    0.03,
+                    0.0,
+                    -0.107,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "foot": [
+                    -0.00045854,
+                    -0.0016595,
+                    -0.13599,
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            "left_hind": {
+                "hip": [
+                    -0.090715,
+                    0.039,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "upper_leg": [
+                    0.0,
+                    0.06015,
+                    -0.01005,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "lower_leg": [
+                    0.03,
+                    0.0,
+                    -0.107,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "foot": [
+                    -0.00045855,
+                    0.0016595,
+                    -0.13599,
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            "right_hind": {
+                "hip": [
+                    -0.090715,
+                    -0.039,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "upper_leg": [
+                    0.0,
+                    -0.060025,
+                    -0.01005,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "lower_leg": [
+                    0.03,
+                    0.0,
+                    -0.107,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "foot": [
+                    -0.00045854,
+                    -0.0015345,
+                    -0.13599,
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            }
+        },
+        "gait": {
+            "knee_orientation": ">>",
+            "odom_scaler": 1.0,
+            "max_linear_vel_x": 0.5,
+            "max_linear_vel_y": 0.25,
+            "max_angular_vel_z": 1.0,
+            "stance_duration": 0.25,
+            "com_x_translation": 0.0,
+            "swing_height": 0.04,
+            "stance_depth": 0.0,
+            "nominal_height": 0.1,
+            "pantograph_leg": "false"
+        }
+    }
+}
