@@ -1,1 +1,0 @@
-/home/gopi/friday_ws/src/champ/champ_bringup/launch/joints_gui.launch.py

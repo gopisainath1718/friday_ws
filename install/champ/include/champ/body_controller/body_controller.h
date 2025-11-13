@@ -1,1 +1,0 @@
-/home/gopi/friday_ws/src/champ/champ/include/champ/body_controller/body_controller.h

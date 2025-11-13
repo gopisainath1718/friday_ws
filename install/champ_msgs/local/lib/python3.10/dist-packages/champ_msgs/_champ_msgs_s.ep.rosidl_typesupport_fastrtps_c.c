@@ -1,1 +1,0 @@
-/home/gopi/friday_ws/build/champ_msgs/rosidl_generator_py/champ_msgs/_champ_msgs_s.ep.rosidl_typesupport_fastrtps_c.c

@@ -1,1 +1,0 @@
-/home/gopi/friday_ws/src/champ/friday_config/launch/navigate.launch.py

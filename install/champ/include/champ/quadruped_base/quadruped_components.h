@@ -1,1 +1,0 @@
-/home/gopi/friday_ws/src/champ/champ/include/champ/quadruped_base/quadruped_components.h

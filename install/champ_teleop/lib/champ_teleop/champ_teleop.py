@@ -1,1 +1,0 @@
-/home/gopi/friday_ws/src/champ_teleop/champ_teleop.py

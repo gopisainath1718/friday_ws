@@ -1,1 +1,0 @@
-/home/gopi/friday_ws/src/champ/champ/include/champ/leg_controller/phase_generator.h
