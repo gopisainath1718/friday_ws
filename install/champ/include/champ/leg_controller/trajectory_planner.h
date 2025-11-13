@@ -1,0 +1,1 @@
+/home/gopi/friday_ws/src/champ/champ/include/champ/leg_controller/trajectory_planner.h

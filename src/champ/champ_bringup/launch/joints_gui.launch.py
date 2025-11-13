@@ -14,7 +14,7 @@ def generate_launch_description():
     use_sim_time = LaunchConfiguration("use_sim_time")
     description_name = LaunchConfiguration("description_name")
 
-    pkg_share = launch_ros.substitutions.FindPackageShare(package="champ_config").find("champ_config")
+    pkg_share = launch_ros.substitutions.FindPackageShare(package="friday_config").find("friday_config")
     config = os.path.join(pkg_share, "config/joints/joints.yaml")
 
     declare_description_name = DeclareLaunchArgument("description_name", default_value="champ", description="Robot description")

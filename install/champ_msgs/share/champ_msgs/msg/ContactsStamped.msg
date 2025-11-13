@@ -1,0 +1,1 @@
+/home/gopi/friday_ws/src/champ/champ_msgs/msg/ContactsStamped.msg

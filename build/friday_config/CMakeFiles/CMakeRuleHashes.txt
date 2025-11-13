@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+5a92937478fa03c47d7db73d72081f7a CMakeFiles/friday_config_uninstall

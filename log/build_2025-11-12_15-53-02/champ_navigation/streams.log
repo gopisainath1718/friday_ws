@@ -1,0 +1,46 @@
+[0.009s] Invoking command in '/home/gopi/friday_ws/build/champ_navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/gopi/friday_ws/src/champ/champ_navigation -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/gopi/friday_ws/install/champ_navigation
+[0.049s] -- The C compiler identification is GNU 11.4.0
+[0.090s] -- The CXX compiler identification is GNU 11.4.0
+[0.096s] -- Detecting C compiler ABI info
+[0.143s] -- Detecting C compiler ABI info - done
+[0.149s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.149s] -- Detecting C compile features
+[0.150s] -- Detecting C compile features - done
+[0.152s] -- Detecting CXX compiler ABI info
+[0.204s] -- Detecting CXX compiler ABI info - done
+[0.210s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.210s] -- Detecting CXX compile features
+[0.210s] -- Detecting CXX compile features - done
+[0.212s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.316s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.358s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.421s] -- Configuring done
+[0.423s] -- Generating done
+[0.425s] -- Build files have been written to: /home/gopi/friday_ws/build/champ_navigation
+[0.428s] Invoked command in '/home/gopi/friday_ws/build/champ_navigation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/gopi/friday_ws/src/champ/champ_navigation -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/gopi/friday_ws/install/champ_navigation
+[0.429s] Invoking command in '/home/gopi/friday_ws/build/champ_navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/gopi/friday_ws/build/champ_navigation -- -j20 -l20
+[0.457s] Invoked command in '/home/gopi/friday_ws/build/champ_navigation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/gopi/friday_ws/build/champ_navigation -- -j20 -l20
+[0.458s] Invoking command in '/home/gopi/friday_ws/build/champ_navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/gopi/friday_ws/build/champ_navigation
+[0.462s] -- Install configuration: ""
+[0.462s] -- Execute custom install script
+[0.462s] -- Symlinking: /home/gopi/friday_ws/install/champ_navigation/share/champ_navigation/launch/navigate.launch.py
+[0.467s] -- Symlinking: /home/gopi/friday_ws/install/champ_navigation/share/champ_navigation/launch/slam.launch.py
+[0.472s] -- Symlinking: /home/gopi/friday_ws/install/champ_navigation/share/champ_navigation/rviz/navigation.rviz
+[0.480s] -- Symlinking: /home/gopi/friday_ws/install/champ_navigation/share/champ_navigation/rviz/navigation_minimal.rviz
+[0.485s] -- Symlinking: /home/gopi/friday_ws/install/champ_navigation/share/champ_navigation/rviz/slam.rviz
+[0.490s] -- Symlinking: /home/gopi/friday_ws/install/champ_navigation/share/ament_index/resource_index/package_run_dependencies/champ_navigation
+[0.495s] -- Symlinking: /home/gopi/friday_ws/install/champ_navigation/share/ament_index/resource_index/parent_prefix_path/champ_navigation
+[0.502s] -- Symlinking: /home/gopi/friday_ws/install/champ_navigation/share/champ_navigation/environment/ament_prefix_path.sh
+[0.508s] -- Symlinking: /home/gopi/friday_ws/install/champ_navigation/share/champ_navigation/environment/ament_prefix_path.dsv
+[0.515s] -- Symlinking: /home/gopi/friday_ws/install/champ_navigation/share/champ_navigation/environment/path.sh
+[0.520s] -- Symlinking: /home/gopi/friday_ws/install/champ_navigation/share/champ_navigation/environment/path.dsv
+[0.525s] -- Symlinking: /home/gopi/friday_ws/install/champ_navigation/share/champ_navigation/local_setup.bash
+[0.533s] -- Symlinking: /home/gopi/friday_ws/install/champ_navigation/share/champ_navigation/local_setup.sh
+[0.540s] -- Symlinking: /home/gopi/friday_ws/install/champ_navigation/share/champ_navigation/local_setup.zsh
+[0.544s] -- Symlinking: /home/gopi/friday_ws/install/champ_navigation/share/champ_navigation/local_setup.dsv
+[0.550s] -- Symlinking: /home/gopi/friday_ws/install/champ_navigation/share/champ_navigation/package.dsv
+[0.556s] -- Symlinking: /home/gopi/friday_ws/install/champ_navigation/share/ament_index/resource_index/packages/champ_navigation
+[0.562s] -- Symlinking: /home/gopi/friday_ws/install/champ_navigation/share/champ_navigation/cmake/champ_navigationConfig.cmake
+[0.567s] -- Symlinking: /home/gopi/friday_ws/install/champ_navigation/share/champ_navigation/cmake/champ_navigationConfig-version.cmake
+[0.571s] -- Symlinking: /home/gopi/friday_ws/install/champ_navigation/share/champ_navigation/package.xml
+[0.579s] Invoked command in '/home/gopi/friday_ws/build/champ_navigation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/gopi/friday_ws/build/champ_navigation

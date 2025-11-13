@@ -1,0 +1,1 @@
+/home/gopi/friday_ws/build/champ_description/ament_cmake_core/champ_descriptionConfig.cmake

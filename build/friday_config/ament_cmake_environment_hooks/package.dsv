@@ -1,0 +1,4 @@
+source;share/friday_config/local_setup.bash
+source;share/friday_config/local_setup.dsv
+source;share/friday_config/local_setup.sh
+source;share/friday_config/local_setup.zsh

@@ -1,0 +1,1 @@
+/home/gopi/friday_ws/build/friday_config/ament_cmake_environment_hooks/local_setup.bash

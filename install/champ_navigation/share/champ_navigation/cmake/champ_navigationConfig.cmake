@@ -1,0 +1,1 @@
+/home/gopi/friday_ws/build/champ_navigation/ament_cmake_core/champ_navigationConfig.cmake

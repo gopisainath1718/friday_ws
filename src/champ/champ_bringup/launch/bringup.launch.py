@@ -23,8 +23,8 @@ from launch.substitutions import Command, LaunchConfiguration
 def generate_launch_description():
 
     config_pkg_share = launch_ros.substitutions.FindPackageShare(
-        package="champ_config"
-    ).find("champ_config")
+        package="friday_config"
+    ).find("friday_config")
     descr_pkg_share = launch_ros.substitutions.FindPackageShare(
         package="champ_description"
     ).find("champ_description")
@@ -34,7 +34,10 @@ def generate_launch_description():
     links_config = os.path.join(config_pkg_share, "config/links/links.yaml")
 
     default_rviz_path = os.path.join(descr_pkg_share, "rviz/urdf_viewer.rviz")
-    default_model_path = os.path.join(descr_pkg_share, "urdf/champ.urdf.xacro")
+    default_model_path = os.path.join(descr_pkg_share, "urdf/friday.urdf")
+
+    with open(default_model_path, 'r') as infp:
+        robot_desc = infp.read()
 
     declare_use_sim_time = DeclareLaunchArgument(
         "use_sim_time",
@@ -56,19 +59,19 @@ def generate_launch_description():
 
     declare_joints_map_path = DeclareLaunchArgument(
         name="joints_map_path",
-        default_value='',
+        default_value=joints_config,
         description="Absolute path to joints map file",
     )
 
     declare_links_map_path = DeclareLaunchArgument(
         name="links_map_path",
-        default_value='',
+        default_value=links_config,
         description="Absolute path to links map file",
     )
 
     declare_gait_config_path = DeclareLaunchArgument(
         name="gait_config_path",
-        default_value='',
+        default_value=gait_config,
         description="Absolute path to gait config file",
     )
 
@@ -165,12 +168,14 @@ def generate_launch_description():
             {"publish_joint_control": LaunchConfiguration("publish_joint_control")},
             {"publish_foot_contacts": LaunchConfiguration("publish_foot_contacts")},
             {"joint_controller_topic": LaunchConfiguration("joint_controller_topic")},
-            {"urdf": Command(['xacro ', LaunchConfiguration('description_path')])},
+            {"urdf": robot_desc},
             LaunchConfiguration('joints_map_path'),
             LaunchConfiguration('links_map_path'),
             LaunchConfiguration('gait_config_path'),
         ],
-        remappings=[("/cmd_vel/smooth", "/cmd_vel")],
+        remappings=[
+            ("/cmd_vel/smooth", "/cmd_vel"),
+        ],
     )
 
     state_estimator_node = Node(
@@ -180,7 +185,7 @@ def generate_launch_description():
         parameters=[
             {"use_sim_time": LaunchConfiguration("use_sim_time")},
             {"orientation_from_imu": LaunchConfiguration("orientation_from_imu")},
-            {"urdf": Command(['xacro ', LaunchConfiguration('description_path')])},
+            {"urdf": robot_desc},
             LaunchConfiguration('joints_map_path'),
             LaunchConfiguration('links_map_path'),
             LaunchConfiguration('gait_config_path'),
@@ -231,6 +236,9 @@ def generate_launch_description():
         arguments=['-d', LaunchConfiguration("rviz_path")],
         condition=IfCondition(LaunchConfiguration("rviz"))
     )
+
+
+
 
 
     return LaunchDescription(

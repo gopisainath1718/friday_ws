@@ -1,0 +1,1 @@
+/home/gopi/friday_ws/build/friday_config/ament_cmake_core/friday_configConfig-version.cmake

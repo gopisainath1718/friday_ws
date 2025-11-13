@@ -1,0 +1,47 @@
+[0.007s] Invoking command in '/home/gopi/friday_ws/build/champ_base': CMAKE_PREFIX_PATH=/home/gopi/friday_ws/install/champ_msgs:/home/gopi/friday_ws/install/champ:/home/gopi/friday_ws/install/friday_config:/home/gopi/friday_ws/install/champ_teleop:/home/gopi/friday_ws/install/champ_navigation:/home/gopi/friday_ws/install/champ_bringup:/home/gopi/friday_ws/install/champ_base:/home/gopi/friday_ws/install/champ_description:/opt/ros/humble LD_LIBRARY_PATH=/home/gopi/friday_ws/install/champ_msgs/lib:/home/gopi/friday_ws/install/champ_base/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/gopi/friday_ws/build/champ_base -- -j20 -l20
+[0.033s] [35m[1mConsolidate compiler generated dependencies of target state_estimation[0m
+[0.035s] [35m[1mConsolidate compiler generated dependencies of target quadruped_controller[0m
+[0.035s] [35m[1mConsolidate compiler generated dependencies of target message_relay[0m
+[0.047s] [ 16%] Built target state_estimation
+[0.048s] [ 33%] Built target quadruped_controller
+[0.049s] [ 50%] Built target message_relay
+[0.055s] [35m[1mConsolidate compiler generated dependencies of target state_estimation_node[0m
+[0.056s] [35m[1mConsolidate compiler generated dependencies of target quadruped_controller_node[0m
+[0.057s] [35m[1mConsolidate compiler generated dependencies of target message_relay_node[0m
+[0.067s] [ 66%] Built target quadruped_controller_node
+[0.068s] [ 83%] Built target state_estimation_node
+[0.072s] [100%] Built target message_relay_node
+[0.078s] Invoked command in '/home/gopi/friday_ws/build/champ_base' returned '0': CMAKE_PREFIX_PATH=/home/gopi/friday_ws/install/champ_msgs:/home/gopi/friday_ws/install/champ:/home/gopi/friday_ws/install/friday_config:/home/gopi/friday_ws/install/champ_teleop:/home/gopi/friday_ws/install/champ_navigation:/home/gopi/friday_ws/install/champ_bringup:/home/gopi/friday_ws/install/champ_base:/home/gopi/friday_ws/install/champ_description:/opt/ros/humble LD_LIBRARY_PATH=/home/gopi/friday_ws/install/champ_msgs/lib:/home/gopi/friday_ws/install/champ_base/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/gopi/friday_ws/build/champ_base -- -j20 -l20
+[0.080s] Invoking command in '/home/gopi/friday_ws/build/champ_base': CMAKE_PREFIX_PATH=/home/gopi/friday_ws/install/champ_msgs:/home/gopi/friday_ws/install/champ:/home/gopi/friday_ws/install/friday_config:/home/gopi/friday_ws/install/champ_teleop:/home/gopi/friday_ws/install/champ_navigation:/home/gopi/friday_ws/install/champ_bringup:/home/gopi/friday_ws/install/champ_base:/home/gopi/friday_ws/install/champ_description:/opt/ros/humble LD_LIBRARY_PATH=/home/gopi/friday_ws/install/champ_msgs/lib:/home/gopi/friday_ws/install/champ_base/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/gopi/friday_ws/build/champ_base
+[0.084s] -- Install configuration: ""
+[0.084s] -- Execute custom install script
+[0.085s] -- Up-to-date symlink: /home/gopi/friday_ws/install/champ_base/share/champ_base/config/ekf/base_to_footprint.yaml
+[0.085s] -- Up-to-date symlink: /home/gopi/friday_ws/install/champ_base/share/champ_base/config/ekf/footprint_to_odom.yaml
+[0.085s] -- Up-to-date symlink: /home/gopi/friday_ws/install/champ_base/share/champ_base/config/velocity_smoother/velocity_smoother.yaml
+[0.085s] -- Up-to-date symlink: /home/gopi/friday_ws/install/champ_base/lib/libquadruped_controller.so
+[0.085s] -- Up-to-date symlink: /home/gopi/friday_ws/install/champ_base/bin/quadruped_controller_node
+[0.085s] -- Up-to-date symlink: /home/gopi/friday_ws/install/champ_base/lib/libmessage_relay.so
+[0.085s] -- Up-to-date symlink: /home/gopi/friday_ws/install/champ_base/bin/message_relay_node
+[0.085s] -- Up-to-date symlink: /home/gopi/friday_ws/install/champ_base/lib/libstate_estimation.so
+[0.085s] -- Up-to-date symlink: /home/gopi/friday_ws/install/champ_base/bin/state_estimation_node
+[0.085s] -- Up-to-date symlink: /home/gopi/friday_ws/install/champ_base/lib/champ_base/quadruped_controller_node
+[0.085s] -- Up-to-date symlink: /home/gopi/friday_ws/install/champ_base/lib/champ_base/message_relay_node
+[0.085s] -- Up-to-date symlink: /home/gopi/friday_ws/install/champ_base/lib/champ_base/state_estimation_node
+[0.085s] -- Up-to-date symlink: /home/gopi/friday_ws/install/champ_base/share/ament_index/resource_index/package_run_dependencies/champ_base
+[0.085s] -- Up-to-date symlink: /home/gopi/friday_ws/install/champ_base/share/ament_index/resource_index/parent_prefix_path/champ_base
+[0.085s] -- Up-to-date symlink: /home/gopi/friday_ws/install/champ_base/share/champ_base/environment/ament_prefix_path.sh
+[0.085s] -- Up-to-date symlink: /home/gopi/friday_ws/install/champ_base/share/champ_base/environment/ament_prefix_path.dsv
+[0.085s] -- Up-to-date symlink: /home/gopi/friday_ws/install/champ_base/share/champ_base/environment/path.sh
+[0.085s] -- Up-to-date symlink: /home/gopi/friday_ws/install/champ_base/share/champ_base/environment/path.dsv
+[0.086s] -- Up-to-date symlink: /home/gopi/friday_ws/install/champ_base/share/champ_base/local_setup.bash
+[0.086s] -- Up-to-date symlink: /home/gopi/friday_ws/install/champ_base/share/champ_base/local_setup.sh
+[0.086s] -- Up-to-date symlink: /home/gopi/friday_ws/install/champ_base/share/champ_base/local_setup.zsh
+[0.086s] -- Up-to-date symlink: /home/gopi/friday_ws/install/champ_base/share/champ_base/local_setup.dsv
+[0.086s] -- Symlinking: /home/gopi/friday_ws/install/champ_base/share/champ_base/package.dsv
+[0.092s] -- Up-to-date symlink: /home/gopi/friday_ws/install/champ_base/share/ament_index/resource_index/packages/champ_base
+[0.092s] -- Up-to-date symlink: /home/gopi/friday_ws/install/champ_base/share/champ_base/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.092s] -- Up-to-date symlink: /home/gopi/friday_ws/install/champ_base/share/champ_base/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.092s] -- Up-to-date symlink: /home/gopi/friday_ws/install/champ_base/share/champ_base/cmake/champ_baseConfig.cmake
+[0.092s] -- Up-to-date symlink: /home/gopi/friday_ws/install/champ_base/share/champ_base/cmake/champ_baseConfig-version.cmake
+[0.092s] -- Up-to-date symlink: /home/gopi/friday_ws/install/champ_base/share/champ_base/package.xml
+[0.094s] Invoked command in '/home/gopi/friday_ws/build/champ_base' returned '0': CMAKE_PREFIX_PATH=/home/gopi/friday_ws/install/champ_msgs:/home/gopi/friday_ws/install/champ:/home/gopi/friday_ws/install/friday_config:/home/gopi/friday_ws/install/champ_teleop:/home/gopi/friday_ws/install/champ_navigation:/home/gopi/friday_ws/install/champ_bringup:/home/gopi/friday_ws/install/champ_base:/home/gopi/friday_ws/install/champ_description:/opt/ros/humble LD_LIBRARY_PATH=/home/gopi/friday_ws/install/champ_msgs/lib:/home/gopi/friday_ws/install/champ_base/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/gopi/friday_ws/build/champ_base
