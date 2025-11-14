@@ -1,0 +1,112 @@
+<mujoco model="friday_robot">
+  <compiler angle="radian" meshdir="meshes/"/>
+
+  <asset>
+    <mesh name="base_link_mod" content_type="model/stl" file="base_link_mod.STL"/>
+    <mesh name="fl_abad_link" content_type="model/stl" file="fl_abad_link.STL"/>
+    <mesh name="fl_upper_leg_link" content_type="model/stl" file="fl_upper_leg_link.STL"/>
+    <mesh name="fl_lower_leg_link" content_type="model/stl" file="fl_lower_leg_link.STL"/>
+    <mesh name="fl_foot_link" content_type="model/stl" file="fl_foot_link.STL"/>
+    <mesh name="fr_abad_link" content_type="model/stl" file="fr_abad_link.STL"/>
+    <mesh name="fr_upper_leg_linnk" content_type="model/stl" file="fr_upper_leg_linnk.STL"/>
+    <mesh name="fr_lower_leg_link" content_type="model/stl" file="fr_lower_leg_link.STL"/>
+    <mesh name="fr_foot_link" content_type="model/stl" file="fr_foot_link.STL"/>
+    <mesh name="hr_abad_link" content_type="model/stl" file="hr_abad_link.STL"/>
+    <mesh name="hr_upper_leg_link" content_type="model/stl" file="hr_upper_leg_link.STL"/>
+    <mesh name="hr_lower_leg_link" content_type="model/stl" file="hr_lower_leg_link.STL"/>
+    <mesh name="hr_foot_link" content_type="model/stl" file="hr_foot_link.STL"/>
+    <mesh name="hl_abad_link" content_type="model/stl" file="hl_abad_link.STL"/>
+    <mesh name="hl_upper_leg_linnk" content_type="model/stl" file="hl_upper_leg_linnk.STL"/>
+    <mesh name="hl_lower_leg_link" content_type="model/stl" file="hl_lower_leg_link.STL"/>
+    <mesh name="hl_foot_link" content_type="model/stl" file="hl_foot_link.STL"/>
+  </asset>
+
+  <worldbody>
+    <body name="base_link">
+      <inertial pos="0.0067678 -0.00099543 -0.0094041" quat="0.489677 0.498227 -0.502287 0.509602" mass="0.5038" diaginertia="0.000872681 0.000628504 0.000570245"/>
+      <joint name="virtual_joint" type="free"/>
+      <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.9098 0.67843 0.13725 1" mesh="base_link_mod"/>
+      <geom type="mesh" rgba="0.9098 0.67843 0.13725 1" mesh="base_link_mod"/>
+      <body name="fl_abad_link" pos="0.093784 0.039 0">
+        <inertial pos="0.0012078 0.00097058 -0.0069082" quat="0.707179 -0.0068037 -0.0110677 0.706915" mass="0.089265" diaginertia="4.02119e-05 3.07302e-05 1.62699e-05"/>
+        <joint name="fl_abad_joint" pos="0 0 0" axis="1 0 0" range="-1.5 1.5"/>
+        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.79216 0.81961 0.93333 1" mesh="fl_abad_link"/>
+        <geom type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="fl_abad_link"/>
+        <body name="fl_upper_leg_link" pos="0 0.06015 -0.01025">
+          <inertial pos="0.0016892 -0.002254 -0.039521" quat="0.993917 -0.00694963 0.00350313 -0.109853" mass="0.13978" diaginertia="0.00011015 0.000103138 2.84027e-05"/>
+          <joint name="fl_hip_joint" pos="0 0 0" axis="0 1 0" range="-1.5 1.5"/>
+          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.79216 0.81961 0.93333 1" mesh="fl_upper_leg_link"/>
+          <geom type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="fl_upper_leg_link"/>
+          <body name="fl_lower_leg_link" pos="0.03 0 -0.107">
+            <inertial pos="-0.0162409 0.000972795 -0.0191813" quat="0.281773 0.625526 0.678232 0.263294" mass="0.0691618" diaginertia="0.000252447 0.00021907 4.62066e-05"/>
+            <joint name="fl_knee_joint" pos="0 0 0" axis="0 1 0" range="-1.5 1.5"/>
+            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.098039 0.098039 0.098039 1" mesh="fl_lower_leg_link"/>
+            <geom type="mesh" rgba="0.098039 0.098039 0.098039 1" mesh="fl_lower_leg_link"/>
+            <geom pos="-0.00045854 0.0016595 -0.13599" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="fl_foot_link"/>
+            <geom pos="-0.00045854 0.0016595 -0.13599" quat="1 0 0 0" type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="fl_foot_link"/>
+          </body>
+        </body>
+      </body>
+      <body name="fr_abad_link" pos="0.093784 -0.039 0">
+        <inertial pos="0.000100805 -0.00768686 -0.0057231" quat="0.682837 -0.01049 -0.00950466 0.730433" mass="0.0710935" diaginertia="2.93058e-05 2.16567e-05 1.22562e-05"/>
+        <joint name="fr_abad_joint" pos="0 0 0" axis="1 0 0" range="-1.5 1.5"/>
+        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="fr_abad_link"/>
+        <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="fr_abad_link"/>
+        <body name="fr_upper_leg_linnk" pos="0 -0.06015 -0.01005">
+          <inertial pos="0.0025972 0.00091552 -0.043088" quat="0.999871 0.00705983 -0.0141097 0.00314164" mass="0.24625" diaginertia="0.000211177 0.00020132 5.1553e-05"/>
+          <joint name="fr_hip_joint" pos="0 0 0" axis="0 1 0" range="-1.5 1.5"/>
+          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.79216 0.81961 0.93333 1" mesh="fr_upper_leg_linnk"/>
+          <geom type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="fr_upper_leg_linnk"/>
+          <body name="fr_lower_leg_link" pos="0.03 0 -0.107">
+            <inertial pos="-0.0162409 -0.000972957 -0.0191813" quat="0.263293 0.678229 0.625529 0.281773" mass="0.0691621" diaginertia="0.000252447 0.00021907 4.62069e-05"/>
+            <joint name="fr_knee_joint" pos="0 0 0" axis="0 1 0" range="-1.5 1.5"/>
+            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.0980392 0.0980392 0.0980392 1" mesh="fr_lower_leg_link"/>
+            <geom type="mesh" rgba="0.0980392 0.0980392 0.0980392 1" mesh="fr_lower_leg_link"/>
+            <geom pos="-0.00045854 -0.0016595 -0.13599" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="fr_foot_link"/>
+            <geom pos="-0.00045854 -0.0016595 -0.13599" quat="1 0 0 0" type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="fr_foot_link"/>
+          </body>
+        </body>
+      </body>
+      <body name="hr_abad_link" pos="-0.090715 -0.039 0">
+        <inertial pos="0.000100308 -0.00768687 -0.0057231" quat="0.682861 -0.0104903 -0.00950432 0.730411" mass="0.0710935" diaginertia="2.93058e-05 2.16567e-05 1.22562e-05"/>
+        <joint name="hr_abad_joint" pos="0 0 0" axis="1 0 0" range="-1.5 1.5"/>
+        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="hr_abad_link"/>
+        <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="hr_abad_link"/>
+        <body name="hr_upper_leg_link" pos="0 -0.060025 -0.01005">
+          <inertial pos="0.00259725 0.000809048 -0.0430878" quat="0.999871 0.00705972 -0.0141095 0.00314193" mass="0.246252" diaginertia="0.00021118 0.000201324 5.15532e-05"/>
+          <joint name="hr_hip_joint" pos="0 0 0" axis="0 1 0" range="-1.5 1.5"/>
+          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="hr_upper_leg_link"/>
+          <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="hr_upper_leg_link"/>
+          <body name="hr_lower_leg_link" pos="0.03 0 -0.107">
+            <inertial pos="-0.0162409 -0.000877882 -0.0191813" quat="0.263052 0.677553 0.626269 0.28198" mass="0.0691621" diaginertia="0.000252437 0.000219068 4.61987e-05"/>
+            <joint name="hr_knee_joint" pos="0 0 0" axis="0 1 0" range="-1.5 1.5"/>
+            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.0980392 0.0980392 0.0980392 1" mesh="hr_lower_leg_link"/>
+            <geom type="mesh" rgba="0.0980392 0.0980392 0.0980392 1" mesh="hr_lower_leg_link"/>
+            <geom pos="-0.00045854 -0.0015345 -0.13599" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="hr_foot_link"/>
+            <geom pos="-0.00045854 -0.0015345 -0.13599" quat="1 0 0 0" type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="hr_foot_link"/>
+          </body>
+        </body>
+      </body>
+      <body name="hl_abad_link" pos="-0.090715 0.039 0">
+        <inertial pos="0.00120778 0.000970661 -0.0067802" quat="0.707156 -0.00680278 -0.0110674 0.706938" mass="0.0892651" diaginertia="4.02119e-05 3.07306e-05 1.62695e-05"/>
+        <joint name="hl_abad_joint" pos="0 0 0" axis="1 0 0" range="-1.5 1.5"/>
+        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="hl_abad_link"/>
+        <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="hl_abad_link"/>
+        <body name="hl_upper_leg_linnk" pos="0 0.06015 -0.01005">
+          <inertial pos="0.00168915 -0.00225397 -0.0395211" quat="0.993918 -0.00694957 0.00350316 -0.109843" mass="0.13978" diaginertia="0.00011015 0.000103138 2.84024e-05"/>
+          <joint name="hl_hip_joint" pos="0 0 0" axis="0 1 0" range="-1.5 1.5"/>
+          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="hl_upper_leg_linnk"/>
+          <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="hl_upper_leg_linnk"/>
+          <body name="hl_lower_leg_link" pos="0.03 0 -0.107">
+            <inertial pos="-0.0162408 0.000972839 -0.0191814" quat="0.281772 0.625526 0.678232 0.263293" mass="0.0691621" diaginertia="0.000252447 0.00021907 4.62069e-05"/>
+            <joint name="hl_knee_joint" pos="0 0 0" axis="0 1 0" range="-1.5 1.5"/>
+            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.0980392 0.0980392 0.0980392 1" mesh="hl_lower_leg_link"/>
+            <geom type="mesh" rgba="0.0980392 0.0980392 0.0980392 1" mesh="hl_lower_leg_link"/>
+            <geom pos="-0.00045855 0.0016595 -0.13599" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="hl_foot_link"/>
+            <geom pos="-0.00045855 0.0016595 -0.13599" quat="1 0 0 0" type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="hl_foot_link"/>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>
