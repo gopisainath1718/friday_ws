@@ -3,8 +3,8 @@ import sys
 import mujoco
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-URDF_PATH = os.path.join(BASE_DIR, "friday_robot", "friday_robot.urdf")
-MJCF_PATH = os.path.join(BASE_DIR, "friday_robot", "friday.xml")
+URDF_PATH = os.path.join(BASE_DIR, "friday_description", "friday_robot.urdf")
+MJCF_PATH = os.path.join(BASE_DIR, "friday_description", "friday.xml")
 
 print(f"URDF_PATH : {URDF_PATH}")
 def main():
