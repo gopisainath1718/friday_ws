@@ -3,11 +3,7 @@
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="friday_robot">
-  <mujoco>
-    <compiler meshdir="meshes/" balanceinertia="true" discardvisual="false"/>
-  </mujoco>
-  <link name="virtual_link"/>
+  name="friday">
   <link
     name="base_link">
     <inertial>
@@ -30,7 +26,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="base_link_mod.STL" />
+          filename="package://champ_description/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -44,18 +40,10 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="base_link_mod.STL" />
+          filename="package://champ_description/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
-  <joint
-    name="virtual_joint"
-    type="floating">
-    <parent
-      link="virtual_link" />
-    <child
-      link="base_link" />
-  </joint>
   <link
     name="fl_abad_link">
     <inertial>
@@ -78,7 +66,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="fl_abad_link.STL" />
+          filename="package://champ_description/meshes/fl_abad_link.STL" />
       </geometry>
       <material
         name="">
@@ -92,7 +80,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="fl_abad_link.STL" />
+          filename="package://champ_description/meshes/fl_abad_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -109,8 +97,8 @@
     <axis
       xyz="1 0 0" />
     <limit
-      lower="-1.5"
-      upper="1.5"
+      lower="-0.67"
+      upper="0.85"
       effort="0"
       velocity="0" />
   </joint>
@@ -136,7 +124,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="fl_upper_leg_link.STL" />
+          filename="package://champ_description/meshes/fl_upper_leg_link.STL" />
       </geometry>
       <material
         name="">
@@ -150,7 +138,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="fl_upper_leg_link.STL" />
+          filename="package://champ_description/meshes/fl_upper_leg_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -167,8 +155,8 @@
     <axis
       xyz="0 1 0" />
     <limit
-      lower="-1.5"
-      upper="1.5"
+      lower="-1.75"
+      upper="1.75"
       effort="0"
       velocity="0" />
   </joint>
@@ -194,7 +182,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="fl_lower_leg_link.STL" />
+          filename="package://champ_description/meshes/fl_lower_leg_link.STL" />
       </geometry>
       <material
         name="">
@@ -208,7 +196,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="fl_lower_leg_link.STL" />
+          filename="package://champ_description/meshes/fl_lower_leg_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -225,8 +213,8 @@
     <axis
       xyz="0 1 0" />
     <limit
-      lower="-1.5"
-      upper="1.5"
+      lower="-3.14"
+      upper="0.0"
       effort="0"
       velocity="0" />
   </joint>
@@ -252,7 +240,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="fl_foot_link.STL" />
+          filename="package://champ_description/meshes/fl_foot_link.STL" />
       </geometry>
       <material
         name="">
@@ -266,7 +254,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="fl_foot_link.STL" />
+          filename="package://champ_description/meshes/fl_foot_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -305,7 +293,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="fr_abad_link.STL" />
+          filename="package://champ_description/meshes/fr_abad_link.STL" />
       </geometry>
       <material
         name="">
@@ -319,7 +307,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="fr_abad_link.STL" />
+          filename="package://champ_description/meshes/fr_abad_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -336,8 +324,8 @@
     <axis
       xyz="1 0 0" />
     <limit
-      lower="-1.5"
-      upper="1.5"
+      lower="-0.85"
+      upper="0.67"
       effort="0"
       velocity="0" />
   </joint>
@@ -363,7 +351,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="fr_upper_leg_linnk.STL" />
+          filename="package://champ_description/meshes/fr_upper_leg_linnk.STL" />
       </geometry>
       <material
         name="">
@@ -377,7 +365,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="fr_upper_leg_linnk.STL" />
+          filename="package://champ_description/meshes/fr_upper_leg_linnk.STL" />
       </geometry>
     </collision>
   </link>
@@ -394,8 +382,8 @@
     <axis
       xyz="0 1 0" />
     <limit
-      lower="-1.5"
-      upper="1.5"
+      lower="-1.75"
+      upper="1.75"
       effort="0"
       velocity="0" />
   </joint>
@@ -421,7 +409,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="fr_lower_leg_link.STL" />
+          filename="package://champ_description/meshes/fr_lower_leg_link.STL" />
       </geometry>
       <material
         name="">
@@ -435,7 +423,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="fr_lower_leg_link.STL" />
+          filename="package://champ_description/meshes/fr_lower_leg_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -452,8 +440,8 @@
     <axis
       xyz="0 1 0" />
     <limit
-      lower="-1.5"
-      upper="1.5"
+      lower="-3.14"
+      upper="0.0"
       effort="0"
       velocity="0" />
   </joint>
@@ -479,7 +467,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="fr_foot_link.STL" />
+          filename="package://champ_description/meshes/fr_foot_link.STL" />
       </geometry>
       <material
         name="">
@@ -493,7 +481,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="fr_foot_link.STL" />
+          filename="package://champ_description/meshes/fr_foot_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -532,7 +520,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="hr_abad_link.STL" />
+          filename="package://champ_description/meshes/hr_abad_link.STL" />
       </geometry>
       <material
         name="">
@@ -546,7 +534,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="hr_abad_link.STL" />
+          filename="package://champ_description/meshes/hr_abad_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -563,8 +551,8 @@
     <axis
       xyz="1 0 0" />
     <limit
-      lower="-1.5"
-      upper="1.5"
+      lower="-0.85"
+      upper="0.67"
       effort="0"
       velocity="0" />
   </joint>
@@ -590,7 +578,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="hr_upper_leg_link.STL" />
+          filename="package://champ_description/meshes/hr_upper_leg_link.STL" />
       </geometry>
       <material
         name="">
@@ -604,7 +592,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="hr_upper_leg_link.STL" />
+          filename="package://champ_description/meshes/hr_upper_leg_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -621,8 +609,8 @@
     <axis
       xyz="0 1 0" />
     <limit
-      lower="-1.5"
-      upper="1.5"
+      lower="-1.75"
+      upper="1.75"
       effort="0"
       velocity="0" />
   </joint>
@@ -648,7 +636,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="hr_lower_leg_link.STL" />
+          filename="package://champ_description/meshes/hr_lower_leg_link.STL" />
       </geometry>
       <material
         name="">
@@ -662,7 +650,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="hr_lower_leg_link.STL" />
+          filename="package://champ_description/meshes/hr_lower_leg_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -679,8 +667,8 @@
     <axis
       xyz="0 1 0" />
     <limit
-      lower="-1.5"
-      upper="1.5"
+      lower="-3.14"
+      upper="0.0"
       effort="0"
       velocity="0" />
   </joint>
@@ -706,7 +694,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="hr_foot_link.STL" />
+          filename="package://champ_description/meshes/hr_foot_link.STL" />
       </geometry>
       <material
         name="">
@@ -720,7 +708,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="hr_foot_link.STL" />
+          filename="package://champ_description/meshes/hr_foot_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -759,7 +747,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="hl_abad_link.STL" />
+          filename="package://champ_description/meshes/hl_abad_link.STL" />
       </geometry>
       <material
         name="">
@@ -773,7 +761,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="hl_abad_link.STL" />
+          filename="package://champ_description/meshes/hl_abad_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -790,8 +778,8 @@
     <axis
       xyz="1 0 0" />
     <limit
-      lower="-1.5"
-      upper="1.5"
+      lower="-0.67"
+      upper="0.85"
       effort="0"
       velocity="0" />
   </joint>
@@ -817,7 +805,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="hl_upper_leg_linnk.STL" />
+          filename="package://champ_description/meshes/hl_upper_leg_linnk.STL" />
       </geometry>
       <material
         name="">
@@ -831,7 +819,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="hl_upper_leg_linnk.STL" />
+          filename="package://champ_description/meshes/hl_upper_leg_linnk.STL" />
       </geometry>
     </collision>
   </link>
@@ -848,8 +836,8 @@
     <axis
       xyz="0 1 0" />
     <limit
-      lower="-1.5"
-      upper="1.5"
+      lower="-1.75"
+      upper="1.75"
       effort="0"
       velocity="0" />
   </joint>
@@ -875,7 +863,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="hl_lower_leg_link.STL" />
+          filename="package://champ_description/meshes/hl_lower_leg_link.STL" />
       </geometry>
       <material
         name="">
@@ -889,7 +877,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="hl_lower_leg_link.STL" />
+          filename="package://champ_description/meshes/hl_lower_leg_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -906,8 +894,8 @@
     <axis
       xyz="0 1 0" />
     <limit
-      lower="-1.5"
-      upper="1.5"
+      lower="-3.14"
+      upper="0.0"
       effort="0"
       velocity="0" />
   </joint>
@@ -933,7 +921,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="hl_foot_link.STL" />
+          filename="package://champ_description/meshes/hl_foot_link.STL" />
       </geometry>
       <material
         name="">
@@ -947,7 +935,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="hl_foot_link.STL" />
+          filename="package://champ_description/meshes/hl_foot_link.STL" />
       </geometry>
     </collision>
   </link>
